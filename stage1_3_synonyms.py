@@ -9,9 +9,9 @@ ProductType = u'Product Type'
 
 
 f = codecs.open('elec_pairs_stage1.txt', 'r', errors='ignore')
-categoryMap = {}
-productTypeMap = {}
-
+# map with attribute value, count pair
+categoryMapCount = {}
+productTypeMapCount = {}
 
 for line in f:
     line = unicode(line, errors='ignore')
@@ -21,18 +21,42 @@ for line in f:
     for attribute in json1:
         if attribute == Category:
             currentAttributeValue = json1.get(attribute)[0]
-            if currentAttributeValue in categoryMap:
-                categoryMap[currentAttributeValue] += 1
+            if currentAttributeValue in categoryMapCount:
+                categoryMapCount[currentAttributeValue] += 1
             else:
-                categoryMap[currentAttributeValue] = 1
+                categoryMapCount[currentAttributeValue] = 1
         if attribute == ProductType:
             currentAttributeValue = json1.get(attribute)[0]
-            if currentAttributeValue in productTypeMap:
-                productTypeMap[currentAttributeValue] += 1
+            if currentAttributeValue in productTypeMapCount:
+                productTypeMapCount[currentAttributeValue] += 1
             else:
-                productTypeMap[currentAttributeValue] = 1
+                productTypeMapCount[currentAttributeValue] = 1
 
-print productTypeMap
-print categoryMap
-print "x"
 
+# try to see the suspect related members
+categoryMapWordList = {}
+productTypeMapWordList = {}
+for key in productTypeMapCount:
+    keyWordList = key.split()
+    productTypeMapWordList[key] = keyWordList
+
+for key in categoryMapCount:
+    keyWordList = key.split()
+    categoryMapWordList[key] = keyWordList
+
+allList = []
+index = 0
+for key, value in productTypeMapWordList.iteritems():
+        tempSet = set()
+        for eachWord in value:
+            for innerKey, innerValue in productTypeMapWordList.iteritems():
+                if innerKey == key:
+                    continue
+                else:
+                    if eachWord in innerValue:
+                        tempSet.add(key)
+                        tempSet.add(innerKey)
+        if(tempSet):
+            allList.insert(index, tempSet)
+            index = index + 1
+print allList
