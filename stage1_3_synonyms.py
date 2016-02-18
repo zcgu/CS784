@@ -1,6 +1,6 @@
 import json
 import codecs
-
+import re
 
 
 
@@ -48,14 +48,48 @@ allList = []
 index = 0
 for key, value in productTypeMapWordList.iteritems():
         tempSet = set()
-        for eachWord in value:
-            for innerKey, innerValue in productTypeMapWordList.iteritems():
-                if innerKey == key:
-                    continue
+        matchWordCount = 0
+        for innerKey, innerValue in productTypeMapWordList.iteritems():
+            if innerKey == key:
+                continue
+            else:
+                outValueList = []
+                for word in value:
+                    word = re.sub('[^0-9a-zA-Z]+', '', word.lower())
+                    outValueList.append(word)
+                innerValueList = []
+                for word in innerValue:
+                    word = re.sub('[^0-9a-zA-Z]+', '', word.lower())
+                    innerValueList.append(word)
+
+                outValueLen = len(outValueList)
+                innerValueLen = len(innerValueList)
+                matchNum = 0
+                if(outValueLen < innerValueList):
+                    for eachValue in outValueList:
+                        if eachValue in innerValueList:
+                            matchNum = matchNum + 1
+                        else:
+                            if eachValue:
+                                if eachValue[-1] == 's':
+                                    if eachValue[:-1] == innerValueList[-1]:
+                                        matchNum = matchNum + 1
+
+
                 else:
-                    if eachWord in innerValue:
-                        tempSet.add(key)
-                        tempSet.add(innerKey)
+                    for eachValue in innerValueList:
+                        if eachValue in outValueList:
+                            matchNum = matchNum + 1
+                        else:
+                            if eachValue:
+                                if eachValue[-1] == 's':
+                                    if eachValue[:-1] == outValueList[-1]:
+                                        matchNum = matchNum + 1
+                if matchNum >=2:
+                    tempSet.add(key)
+                    tempSet.add(innerKey)
+
+
         if(tempSet):
             allList.insert(index, tempSet)
             index = index + 1
