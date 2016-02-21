@@ -32,5 +32,5 @@ for line in f:
 sorted_list = sorted(attribute_map.items(), key=lambda d: d[1], reverse=True)
 print sorted_list
 
-f = open("stage1_1_output", 'w')
+f = open("stage1_2_output", 'w')
 f.write(str(sorted_list))

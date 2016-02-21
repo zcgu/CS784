@@ -94,3 +94,6 @@ for key, value in productTypeMapWordList.iteritems():
             allList.insert(index, tempSet)
             index = index + 1
 print allList
+
+for a in allList:
+    print a

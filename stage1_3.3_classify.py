@@ -1,7 +1,7 @@
 import json
 import codecs
 
-f = codecs.open('stage1_1_output', 'r', errors='ignore')
+f = codecs.open('stage1_2_output', 'r', errors='ignore')
 attribute_list = eval(f.read())
 # print attribute_list
 
