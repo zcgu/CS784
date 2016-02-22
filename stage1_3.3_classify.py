@@ -28,7 +28,7 @@ for attribute in top_ten:
             print attribute + ": " + text[0]
             count += 1
 
-        if count == 10:
+        if count == 30:
             break
 
 # length
