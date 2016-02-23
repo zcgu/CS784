@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f22d508-2881-4abd-9ec8-fdb292917c8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.1_illegal_values.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.1_long_short_description.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.1_unique_GTIN_UPC.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.1_unique_PairID.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.1_unique_ProductID.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.2_misss_spelling.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stage1_3.8.4_Illegal_GTIN.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stage1_3.8_data_quality.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/state1_3.7_sprinkled.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CS784Project.iml" afterPath="$PROJECT_DIR$/.idea/CS784Project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stage1_3.3_classify.py" afterPath="$PROJECT_DIR$/stage1_3.3_classify.py" />
     </list>
     <ignored path="CS784Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +28,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="stage1_3.8.4_Illegal_GTIN.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stage1_3.8.4_Illegal_GTIN.py">
+          <file leaf-file-name="Stage1_2_find_attributes.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Stage1_2_find_attributes.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="21" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="10" />
+                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -46,11 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="stage1_3.8.1_unique_PairID.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stage1_3.8.1_unique_PairID.py">
+          <file leaf-file-name="stage1_5_2brand_match.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stage1_5_2brand_match.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -58,11 +52,43 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="stage1_3.8.1_unique_ProductID.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stage1_3.8.1_unique_ProductID.py">
+          <file leaf-file-name="state1_3.7_sprinkled.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/state1_3.7_sprinkled.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.2315437">
+                  <caret line="56" column="37" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#1#12#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <caret line="2410" column="0" selection-start-line="2410" selection-start-column="0" selection-end-line="2410" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="zhicheng_test_aws.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/zhicheng_test_aws.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="stage1_3.3_classify.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stage1_3.3_classify.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -70,11 +96,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="stage1_3.8.1_unique_GTIN_UPC.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stage1_3.8.1_unique_GTIN_UPC.py">
+          <file leaf-file-name="stage1_3.8.2_misss_spelling.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stage1_3.8.2_misss_spelling.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                  <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="stage1_3.6_synonyms.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/stage1_3.6_synonyms.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -98,32 +136,10 @@
             <entry file="file://$PROJECT_DIR$/stage1_3.8.1_illegal_values.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="43" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+                  <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="stage1_3.8.2_misss_spelling.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/stage1_3.8.2_misss_spelling.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40358743">
-                  <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#14#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file:///Library/Python/2.7/site-packages/enchant/__init__.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="611" column="0" selection-start-line="611" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -132,35 +148,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="stage1_3.3_classify.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stage1_3.3_classify.py">
+          <file leaf-file-name="stage1_3.6_synonyms.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/stage1_3.6_synonyms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="stage1_5_2brand_match.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/stage1_5_2brand_match.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38116592">
-                  <caret line="17" column="35" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Stage1_2_find_attributes.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Stage1_2_find_attributes.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.27240774">
+                  <caret line="43" column="27" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -213,13 +205,15 @@
         <option value="$PROJECT_DIR$/stage1_3.8.1_illegal_values.py" />
         <option value="$PROJECT_DIR$/stage1_5_2brand_match.py" />
         <option value="$PROJECT_DIR$/stage1_3.8.2_misss_spelling.py" />
+        <option value="$PROJECT_DIR$/state1_3.7_sprinkled.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="1865" />
-    <option name="height" value="1057" />
+    <option name="width" value="1917" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -302,58 +296,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stage1_3.8.2_misss_spelling">
-    <configuration default="false" name="stage1_3.3_classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS784Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage1_3.3_classify.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="stage1_3.8_unique_GTIN_UPC" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS784Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage1_3.8.1_unique_GTIN_UPC.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="stage1_3.8.1_long_short_description" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS784Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage1_3.8.1_long_short_description.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.state1_3.7_sprinkled">
     <configuration default="false" name="stage1_3.8.1_illegal_values" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,6 +327,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CS784Project" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage1_3.8.2_misss_spelling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="stage1_3.6_synonyms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS784Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage1_3.6_synonyms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="stage1_5_2brand_match" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS784Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stage1_5_2brand_match.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="state1_3.7_sprinkled" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS784Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/state1_3.7_sprinkled.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -511,19 +505,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.stage1_3.3_classify" />
-      <item index="1" class="java.lang.String" itemvalue="Python.stage1_3.8_unique_GTIN_UPC" />
-      <item index="2" class="java.lang.String" itemvalue="Python.stage1_3.8.1_long_short_description" />
-      <item index="3" class="java.lang.String" itemvalue="Python.stage1_3.8.1_illegal_values" />
-      <item index="4" class="java.lang.String" itemvalue="Python.stage1_3.8.2_misss_spelling" />
+      <item index="0" class="java.lang.String" itemvalue="Python.stage1_3.8.1_illegal_values" />
+      <item index="1" class="java.lang.String" itemvalue="Python.stage1_3.8.2_misss_spelling" />
+      <item index="2" class="java.lang.String" itemvalue="Python.stage1_3.6_synonyms" />
+      <item index="3" class="java.lang.String" itemvalue="Python.stage1_5_2brand_match" />
+      <item index="4" class="java.lang.String" itemvalue="Python.state1_3.7_sprinkled" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.stage1_3.8.2_misss_spelling" />
-        <item index="1" class="java.lang.String" itemvalue="Python.stage1_3.8.1_illegal_values" />
-        <item index="2" class="java.lang.String" itemvalue="Python.stage1_3.8.1_long_short_description" />
-        <item index="3" class="java.lang.String" itemvalue="Python.stage1_3.3_classify" />
-        <item index="4" class="java.lang.String" itemvalue="Python.stage1_3.8_unique_GTIN_UPC" />
+        <item index="0" class="java.lang.String" itemvalue="Python.state1_3.7_sprinkled" />
+        <item index="1" class="java.lang.String" itemvalue="Python.stage1_5_2brand_match" />
+        <item index="2" class="java.lang.String" itemvalue="Python.stage1_3.6_synonyms" />
+        <item index="3" class="java.lang.String" itemvalue="Python.stage1_3.8.2_misss_spelling" />
+        <item index="4" class="java.lang.String" itemvalue="Python.stage1_3.8.1_illegal_values" />
       </list>
     </recent_temporary>
   </component>
@@ -573,19 +567,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1865" height="1057" extended-state="6" />
+    <frame x="-1" y="23" width="1917" height="1019" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16182117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16693333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.37418655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="631" y="36" width="706" height="986" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2777202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27615964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43834198" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43797195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -666,22 +660,24 @@
           <line>24</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/state1_3.7_sprinkled.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stage1_3.3_classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stage1_3.3_classify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -747,7 +743,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -808,7 +804,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -975,34 +971,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhicheng_test_aws.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1801" column="0" selection-start-line="1801" selection-start-column="0" selection-end-line="1801" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/re.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326087">
           <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stage1_3.6_synonyms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.944816">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1001,7 @@
     <entry file="file://$PROJECT_DIR$/stage1_3.8.4_Illegal_GTIN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="10" />
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1050,7 +1021,7 @@
     <entry file="file://$PROJECT_DIR$/stage1_3.8.1_unique_PairID.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1077,6 +1048,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stage1_3.8.1_illegal_values.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stage1_2_output">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stage1_3.3_classify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1097,40 +1086,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stage1_3.8.1_illegal_values.py">
+    <entry file="file://$PROJECT_DIR$/zhicheng_test_aws.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stage1_5_2brand_match.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38116592">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/enchant/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="611" column="0" selection-start-line="611" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stage1_3.8.2_misss_spelling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40358743">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stage1_5_2brand_match.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2410" column="0" selection-start-line="2410" selection-start-column="0" selection-end-line="2410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stage1_3.6_synonyms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/state1_3.7_sprinkled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2315437">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
