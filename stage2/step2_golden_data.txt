@@ -272,7 +272,7 @@
 {"Brand": "AddOn", "Product ID": "42394514#TigerDirect", "Product Name": "AddOn - SFP (mini-GBIC) transceiver module - 1000Base-TX - RJ-45"}
 {"Brand": "Middle Atlantic", "Product ID": "11415424", "Product Name": "Middle Atlantic WRK Series 2 W Vertical Lacer Strip"}
 {"Brand": "Katun", "Product ID": "41447004", "Product Name": "Katun [108r00726] Xerox Compatible Phaser 8560 Solid Ink Sticks - Black - Solid Ink - 3400 Page - 3 / Pack (37994)"}
-{"Brand": "Walmart", "Product ID": "11089731#Walmart.com", "Product Name": "Stress testing Item 186 DO NOT BUY"}
+{"Brand": "", "Product ID": "11089731#Walmart.com", "Product Name": "Stress testing Item 186 DO NOT BUY"}
 {"Brand": "Corsair", "Product ID": "42508283#TigerDirect", "Product Name": "Corsair Obsidian 250D Computer Case - Mini ITX 1x (Refurbished)"}
 {"Brand": "Lexmark", "Product ID": "41181888#TEKENVY", "Product Name": "Lexmark Black Toner Cartridge - Black - Laser - 5000 Page - 1 Each"}
 {"Brand": "TITAN PRO ", "Product ID": "40786694#Zoro", "Product Name": "TITAN PRO TRCFD205 Motor Run Capacitor 20/5 MFD 3-5/8 In. H"}
