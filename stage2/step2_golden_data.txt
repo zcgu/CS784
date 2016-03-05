@@ -93,7 +93,7 @@
 {"Brand": "Corlink", "Product ID": "42450808#TigerDirect", "Product Name": "Corlink SFP-GIG-EXTD-COR Alcatel Compatible 1000BASE-SX SFP 850nm 550m DOM MMF LC"}
 {"Brand": "WD", "Product ID": "33606092", "Product Name": "WD My Cloud EX4 12TB Personal Cloud Storage"}
 {"Brand": "Kyocera", "Product ID": "41260664#TEKENVY", "Product Name": "Kyocera Cyan Toner Cartridge - Cyan - Laser - 8000 Page"}
-{"Brand": "MORNING INDUSTRY ", "Product ID": "14972052#Circuit City", "Product Name": "MORNING INDUSTRY INC QF-01AQ 3-IN-1 REMOTE CONTROL and TOUCHPAD DEAD BOLT (ANTIQUE BRASS)"}
+{"Brand": "MORNING INDUSTRY INC", "Product ID": "14972052#Circuit City", "Product Name": "MORNING INDUSTRY INC QF-01AQ 3-IN-1 REMOTE CONTROL and TOUCHPAD DEAD BOLT (ANTIQUE BRASS)"}
 {"Brand": "GoLight", "Product ID": "24256358#UnbeatableSale.com", "Product Name": "GoLight 3100 Stryker Wireless Dash Mount Remote -White"}
 {"Brand": "InFocus", "Product ID": "40804293#TigerDirect", "Product Name": "InFocus JTouch INF6501A - 65 - commercial use LED-backlit LCD flat panel display with touch-screen - 1080p (FullHD) - b"}
 {"Brand": "", "Product ID": "533213#Walmart.com", "Product Name": "Awakening the Heroes Within: Twelve Archetypes to Help Us Find Ourselves and Transform Our World"}
@@ -266,7 +266,7 @@
 {"Brand": "Naki", "Product ID": "10334175", "Product Name": "Naki G-Pak Organizer - Black (Wii)"}
 {"Brand": "Manhattan ", "Product ID": "20612347#UnbeatableSale.com", "Product Name": "Manhattan 161718 28 Port Usb MondoHub - Computer Accessories"}
 {"Brand": "Cisco", "Product ID": "41030853#TEKENVY", "Product Name": "Cisco SPA512G IP Phone - Cable - 1 x Total Line - VoIP - Caller ID - Speakerphone - 2 x Network (RJ-45) - PoE Ports - Mo"}
-{"Brand": "School Zone ", "Product ID": "24869686#UnbeatableSale.com", "Product Name": "School Zone Publishing SZP08222 Math 1-2 Software And Workbook"}
+{"Brand": "School Zone Publishing", "Product ID": "24869686#UnbeatableSale.com", "Product Name": "School Zone Publishing SZP08222 Math 1-2 Software And Workbook"}
 {"Brand": "Print Logic", "Product ID": "41260326#TEKENVY", "Product Name": "Print Logic Toner Cartridge - Replacement for Dell (330-4130) - Black - Laser"}
 {"Brand": "LG ", "Product ID": "40997300", "Product Name": "LG 60LB7100 60-inch 3D LED TV"}
 {"Brand": "AddOn", "Product ID": "42394514#TigerDirect", "Product Name": "AddOn - SFP (mini-GBIC) transceiver module - 1000Base-TX - RJ-45"}

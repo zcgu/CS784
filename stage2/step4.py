@@ -33,14 +33,19 @@ for item in test_data:
     item_name = item[product_name]
     item_brand = item[product_brand]
 
+    # Find all possible brand as array.
+    # Then delete some overlap strings, and delete brand after 'for', e.g., '...xxx for Apple iphone'.
     possible_brands = find_possible_brands(item_name, dictionary_set, dictionary)
     possible_brands = reduce_possible_brands(item_name, possible_brands)
 
+    # If got some possible brands, choose one.
+    # Otherwise see if there are any possible brand at the beginning of name and not in dictionary.
     if len(possible_brands) > 0:
         predict_brand = select_from_possible_brands(item_name, dictionary, possible_brands)
     else:
         predict_brand = find_brand_not_in_dictionary(item_name)
 
+    # Calculate statics.
     if item_brand != '':
         total_positive += 1
     if predict_brand != '' and predict_brand == item_brand:
@@ -55,7 +60,6 @@ for item in test_data:
         print 'possible_brands: ' + str(possible_brands)
         print 'predict_brand: ' + predict_brand
         print
-    # print
 
 print
 
