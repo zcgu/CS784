@@ -12,7 +12,7 @@
 {"Brand": "", "Product ID": "11089657#Walmart.com", "Product Name": "Stress testing Item 56 DO NOT BUY"}
 {"Brand": "Comprehensive", "Product ID": "21345696#UnbeatableSale.com", "Product Name": "Comprehensive Standard Series 2 gold RCA Plugs Each End Stereo Audio Cable 6ft"}
 {"Brand": "Jawbone", "Product ID": "42479211#TigerDirect", "Product Name": "Jawbone UP24 - Large - activity tracker - Bluetooth - 0.8 oz - coral pink"}
-{"Brand": "Ergotron", "Product ID": "15188179#Shoplet", "Product Name": "Ergotron Inc LX Wall Mount Keyboard Arm ERG45246026"}
+{"Brand": "Ergotron Inc", "Product ID": "15188179#Shoplet", "Product Name": "Ergotron Inc LX Wall Mount Keyboard Arm ERG45246026"}
 {"Brand": "LENMAR", "Product ID": "24016931", "Product Name": "LENMAR CLZ358M Replacement Battery For Motorola Droid X Cellular Phones"}
 {"Brand": "", "Product ID": "40501452#Monoprice Inc", "Product Name": "HDMI Connector Male to HDMI Mini Connector Female Adapter"}
 {"Brand": "Canon", "Product ID": "41509264#Focus Camera", "Product Name": "Canon EOS Rebel T3 12.2MP DSLR Camera & 18-55MM IS II Lens Black + Canon EF-S 55-250mm f/4-5.6 IS STM Lens + 32GB SD HC Memory Card + (2) Tiffen 58mm UV Protector + Accessory Kit"}
@@ -30,7 +30,7 @@
 {"Brand": "Dell", "Product ID": "42523564#US Micro", "Product Name": "Off Lease REFURBISHED Dell Latitude E6410 I5 2.6GHz 2GB 160GB DVD Windows 7 Pro Laptop Notebook"}
 {"Brand": "LG", "Product ID": "38153949", "Product Name": "LG 22 Class 720P LED HDTV - 1366x768 Resolution, 16:9, 60Hz, 1x HDMI, USB 2.0 - 22LB4510"}
 {"Brand": "Urban Factory", "Product ID": "41192522#TEKENVY", "Product Name": "Urban Factory Universal Carrying Case (Folio) for 8.9 Tablet - Gray"}
-{"Brand": "", "Product ID": "36190846#Tech For Less Inc", "Product Name": "Cables to Go 28105 3.3 Feet USB Cable - 1 x 4-pin USB Type A Male/Male - Black"}
+{"Brand": "Cables to Go", "Product ID": "36190846#Tech For Less Inc", "Product Name": "Cables to Go 28105 3.3 Feet USB Cable - 1 x 4-pin USB Type A Male/Male - Black"}
 {"Brand": "Silex", "Product ID": "41100189", "Product Name": "Silex Sx-3000gb 10/100/1000 Gigabit Usb Device (sx3000gb)"}
 {"Brand": "EDGE Digital Media ", "Product ID": "42394478#TigerDirect", "Product Name": "EDGE Digital Media - Flash memory card - 512 MB - SD - for HP Pavilion t880; Panasonic-RR-XR320 SV-SD05 SD75 SD80; To"}
 {"Brand": "Tripp Lite", "Product ID": "4216953#Mega Retail Store", "Product Name": "Tripp Lite SmartPro 1500VA UPS"}
@@ -113,7 +113,7 @@
 {"Brand": "", "Product ID": "40500519#Monoprice Inc", "Product Name": "6-1/2 Inch 3-Way Car Speaker (Pair) - 90W"}
 {"Brand": "Dell", "Product ID": "43092521#US Micro", "Product Name": "Off Lease Refurbished Dell UltraSharp U2413 24 WideScreen LCD Flat Panel Computer Monitor Display"}
 {"Brand": "SIIG", "Product ID": "41031392#TEKENVY", "Product Name": "SIIG Portable Battery Charger - 7200"}
-{"Brand": "DoubleSight", "Product ID": "23210213#UnbeatableSale.com", "Product Name": "DoubleSight Displays DS-20PH Single Monitor Flex Arm"}
+{"Brand": "DoubleSight Displays", "Product ID": "23210213#UnbeatableSale.com", "Product Name": "DoubleSight Displays DS-20PH Single Monitor Flex Arm"}
 {"Brand": "", "Product ID": "11043331#Walmart.com", "Product Name": "Acting With Technology: Activity Theory and Interaction Design"}
 {"Brand": "Digipower", "Product ID": "40088115#TigerDirect", "Product Name": "Digipower TP-QPXP2 QuikPod Explorer 2 - Support system - self-portrait support extender"}
 {"Brand": "APC", "Product ID": "41193340", "Product Name": "APC KVM Cable - 6ft"}
@@ -126,7 +126,7 @@
 {"Brand": "Fosmon", "Product ID": "41174669#SF Planet", "Product Name": "Fosmon Apple iPhone 6 4.7 STURDY Shock Absorbing Dual Layer Hybrid Holster Cover Kickstand Case - Black"}
 {"Brand": "Acer", "Product ID": "40897515", "Product Name": "Acer CB5-311-T9Y2 13.3 LED (ComfyView) Chromebook - NVIDIA Tegra K1 CD570M-A1 2.10 GHz - 4 GB RAM - NVIDIA - Chrome OS"}
 {"Brand": "Tripp Lite", "Product ID": "13212864", "Product Name": "Tripp Lite P750-010 10&#039; PS2 Cable kit for B004008"}
-{"Brand": "Tripp Lite", "Product ID": "13212864#Circuit City", "Product Name": "TrippLite 10-Foot PS/2 Slimcable for B004-008 KVM Switch"}
+{"Brand": "TrippLite", "Product ID": "13212864#Circuit City", "Product Name": "TrippLite 10-Foot PS/2 Slimcable for B004-008 KVM Switch"}
 {"Brand": "Lenmar", "Product ID": "24727140", "Product Name": "Lenmar Replacement Battery for JVC BN-V408"}
 {"Brand": "Dane-Elec", "Product ID": "11004276#Walmart.com", "Product Name": "Dane-Elec 16GB SDHC Memory Card"}
 {"Brand": "DoubleSight Displays", "Product ID": "41191947#TEKENVY", "Product Name": "DoubleSight Displays DS-279W 27 LED LCD Monitor - 16:9 - 6 ms - 2560 x 1440 - 1.07 Billion Colors - 380 Nit - 1000:1 -"}
@@ -137,7 +137,7 @@
 {"Brand": "", "Product ID": "40500440#Monoprice Inc", "Product Name": "20FT 24AWG Cat6 550MHz UTP Bare Copper Ethernet Network Cable - Blue"}
 {"Brand": "HP", "Product ID": "4570530#UnbeatableSale.com", "Product Name": "HP 02 Light Magenta Ink Cartridge For Photosmart 8250 Printer Light Magenta C8775WN"}
 {"Brand": "Kodak", "Product ID": "14506022#Tonzof", "Product Name": "Kodak 8367849 Ink Cartridges Combo Pack 10B 425/10C 420 Pg Yld BK/CR"}
-{"Brand": "American Power Conversion", "Product ID": "13213814#Tonzof", "Product Name": "American Power Conversion-APC SC450RM1U 450VA 280W UPS RM 1U"}
+{"Brand": "American Power Conversion-APC", "Product ID": "13213814#Tonzof", "Product Name": "American Power Conversion-APC SC450RM1U 450VA 280W UPS RM 1U"}
 {"Brand": "Ram Mount", "Product ID": "20836237#UnbeatableSale.com", "Product Name": "Ram Mount Cradle for Garmin Colorado Series - RAM-HOL-GA27U"}
 {"Brand": "Premier", "Product ID": "40514887#Monoprice Inc", "Product Name": "1.5ft Premier Series 1/4-inch (TRS) Male to Male 16AWG Cable (Gold Plated)"}
 {"Brand": "IN WIN", "Product ID": "38106730", "Product Name": "IN WIN C-Series C638 - Mid tower - ATX 350 Watt ( ATX12V/ PS/2 ) - black - USB/Audio"}
@@ -185,7 +185,7 @@
 {"Brand": "Kodak", "Product ID": "40898667#TEKENVY", "Product Name": "Kodak ScanMate i940 Sheetfed Scanner - 600 dpi Optical - 20 - 15 - USB"}
 {"Brand": "Corlink", "Product ID": "42454411#TigerDirect", "Product Name": "Corlink CWDM-SFP-1530-COR Cisco Compatible 1000BASE-CWDM SFP 1GE 2G FC 1530nm 80km DOM SMF LC"}
 {"Brand": "", "Product ID": "40501587#Monoprice Inc", "Product Name": "1.5ft Ultra Slim SVGA Super VGA 30/32AWG M/F Monitor Cable w/ ferrites (Gold Plated Connector)"}
-{"Brand": "Premium", "Product ID": "42584487#TEKENVY", "Product Name": "Premium Compatibles HP 02 C8772WN #140 Magenta InkJet Cartridge - PCI HP 02 C8772WN #140 Magenta InkJet Ctg for HP 3110"}
+{"Brand": "Premium Compatibles", "Product ID": "42584487#TEKENVY", "Product Name": "Premium Compatibles HP 02 C8772WN #140 Magenta InkJet Cartridge - PCI HP 02 C8772WN #140 Magenta InkJet Ctg for HP 3110"}
 {"Brand": "Peerless", "Product ID": "11319416#Walmart.com", "Product Name": "Peerless Extension Column Connector With Cord Management Adapter"}
 {"Brand": "Kensington", "Product ID": "15676952", "Product Name": "Kensington Spin2 Monitor Stand, 14 x 14 x 3.25, Black"}
 {"Brand": "Acer", "Product ID": "40881360", "Product Name": "Acer ICONIA B1-730HD-14S8 8 GB Tablet - 7 - In-plane Switching (IPS) Technology - Wireless LAN - Intel Atom"}
@@ -218,7 +218,7 @@
 {"Brand": "Middle Atlantic", "Product ID": "11465348#Wayfair", "Product Name": "Middle Atlantic Slim 5 Series 26 D Wood Side Panels"}
 {"Brand": "Vizio", "Product ID": "41869712#TigerDirect", "Product Name": "Vizio 50 Class 4K Smart LED UHD TV - 3840x2160 2 (Refurbished)"}
 {"Brand": "StarTech", "Product ID": "20659763#Tech For Less Inc", "Product Name": "StarTech MDP2DVIW Video Adapter - 1 x Mini DisplayPort Male 1 x 29-pin Combined DVI Female - White"}
-{"Brand": "Apple", "Product ID": "29503764", "Product Name": "Premium Power Products Battery for Apple Macbook Pro"}
+{"Brand": "Premium Power Products", "Product ID": "29503764", "Product Name": "Premium Power Products Battery for Apple Macbook Pro"}
 {"Brand": "KB Covers", "Product ID": "41732284#TEKENVY", "Product Name": "KB Covers Orange Checkerboard Keyboard Cover - MacBook/Air 13/Pro (2008+)/Retina & Wireless"}
 {"Brand": "", "Product ID": "40502075#Monoprice Inc", "Product Name": "Networking USB 2.0 Print Server - Share 1 USB Device"}
 {"Brand": "Epson", "Product ID": "40700895", "Product Name": "Epson Expression Premium XP-860 Wireless Small-in-One Inkjet Printer EPSC11CD..."}
@@ -230,11 +230,11 @@
 {"Brand": "Lenovo", "Product ID": "38171394", "Product Name": "Lenovo ThinkCentre M73 Desktop PC - Intel Core i5-4570 3.20GHz, 4GB DDR3 Memory, 500GB HDD, DVDRW, Windows 7 Professiona"}
 {"Brand": "Lenovo", "Product ID": "40618922#TigerDirect", "Product Name": "Refurbished Lenovo ThinkCentre M91 Desktop PC - Intel Core i5-2400 3.10GHz 4GB DDR3 Memory 750GB HDD DVDRW Windows 7 Professiona"}
 {"Brand": "Energizer", "Product ID": "42558791#TEKENVY", "Product Name": "Energizer EN22: Alkaline General Purpose Battery - 9V - Alkaline - 9 V DC"}
-{"Brand": "Paladin", "Product ID": "41663324#TigerDirect", "Product Name": "Paladin Tools 1594 LAN & A/V Cable-Check Tester (Refurbished)"}
+{"Brand": "Paladin Tools", "Product ID": "41663324#TigerDirect", "Product Name": "Paladin Tools 1594 LAN & A/V Cable-Check Tester (Refurbished)"}
 {"Brand": "BIC VENTURI", "Product ID": "9893701", "Product Name": "BIC VENTURI DV32CLR 3.5in Center Channel Speaker"}
 {"Brand": "HP", "Product ID": "40668507#TigerDirect", "Product Name": "HP - DDR4 - 8 GB - DIMM 288-pin - 2133 MHz / PC4-17000 - CL15 - 1.2 V - registered - ECC - Smart Buy"}
 {"Brand": "ViewSonic", "Product ID": "40137677#TigerDirect", "Product Name": "ViewSonic 22 Class Widescreen IPS LED Monitor - 1 (Refurbished)"}
-{"Brand": "Xbox", "Product ID": "42557375#TEKENVY", "Product Name": "EA Plants vs. Zombies Garden Warfare - Action/Adventure Game - Xbox One"}
+{"Brand": "EA", "Product ID": "42557375#TEKENVY", "Product Name": "EA Plants vs. Zombies Garden Warfare - Action/Adventure Game - Xbox One"}
 {"Brand": "Belkin", "Product ID": "41485889", "Product Name": "Belkin F3X1982-25 Display/Audio Cable - for Monitor - 25 ft - 1 x HD-15 Male VGA, 1 x Mini-phone Male Stereo Audio - 1 x HD-15 Male VGA, 1 x Mini-phone Male Stereo Audio"}
 {"Brand": "Tripp Lite", "Product ID": "40899757", "Product Name": "Tripp Lite Standard Power Cord Y Splitter Cable - (NEMA 5-15P to 2x IEC-320-C13) 6-ft."}
 {"Brand": "", "Product ID": "40500246", "Product Name": "Commercial Series Premium Flat High Speed HDMI Cable with Ethernet, 10ft Black"}
@@ -248,7 +248,7 @@
 {"Brand": "Multi-Tech", "Product ID": "39136433", "Product Name": "Multi-Tech QuickCarrier USB-D MTD-H5 - Wireless cellular modem - external - USB 2.0 - GSM, GPRS, UMTS, EDGE, HSDPA, HSUP"}
 {"Brand": "Nolan", "Product ID": "34250761", "Product Name": "Nolan N20 City Open Face Helmet Metal Corsa Red/White SM"}
 {"Brand": "Griffin", "Product ID": "41181855", "Product Name": "Griffin Survivor Slim for iPhone 5c - iPhone - Purple, White - Textured - Silicone, Polycarbonate"}
-{"Brand": "Clover", "Product ID": "40871337#TEKENVY", "Product Name": "Clover Technologies Toner Cartridge - Black - Laser - 2000 Page - 1 Each - Remanufactured"}
+{"Brand": "Clover Technologies", "Product ID": "40871337#TEKENVY", "Product Name": "Clover Technologies Toner Cartridge - Black - Laser - 2000 Page - 1 Each - Remanufactured"}
 {"Brand": "Aluratek", "Product ID": "34743021#Tech For Less Inc", "Product Name": "Aluratek 4-Port USB 3.0 SuperSpeed Hub with Attached Cable - USB - External - 4 USB Port(s) - 4 USB 3.0 Port(s)"}
 {"Brand": "Grandstream", "Product ID": "42009848#TigerDirect", "Product Name": "Grandstream Innovative IP PBX Appliance - 512MB DDR RAM 1GHz ARM Cortex A8 Application Processor (GS-UCM6104)"}
 {"Brand": "Minuteman", "Product ID": "22852269", "Product Name": "Minuteman Enterprise Plus Series Uninterruptible Power Supply"}
@@ -259,7 +259,7 @@
 {"Brand": "Ergotron", "Product ID": "40899617", "Product Name": "Ergotron 45-247-026 Wall Mount for Flat Panel Display - 24 Screen Support - 20 lb Load Capacity - Aluminum"}
 {"Brand": "Tripp-Lite", "Product ID": "13212906#Circuit City", "Product Name": "Tripp-Lite S510-18N Internal SAS Cable - 1.5ft mini-SAS (SFF-8087) to 4-in-1 32pin (SFF-8484) Gray"}
 {"Brand": "Furman", "Product ID": "10747519", "Product Name": "Furman Merit M-8LX Power Conditioner with Lights"}
-{"Brand": "Juniper", "Product ID": "42464531#TigerDirect", "Product Name": "Corlink SFP-GE40KT13R14-COR Juniper Compatible 1000BASE-BXU SFP Tx1310nm/Rx1490nm 40km DOM SMF LC"}
+{"Brand": "Corlink", "Product ID": "42464531#TigerDirect", "Product Name": "Corlink SFP-GE40KT13R14-COR Juniper Compatible 1000BASE-BXU SFP Tx1310nm/Rx1490nm 40km DOM SMF LC"}
 {"Brand": "", "Product ID": "17046415", "Product Name": "Dishonored (PS3)"}
 {"Brand": "Toshiba", "Product ID": "41277105", "Product Name": "Toshiba Laptop Optical Mouse - Optical - Usb - 3 X Button - Black, Silver (pa3678u1ets)"}
 {"Brand": "StarTech.com", "Product ID": "40870809", "Product Name": "StarTech.com 3 ft DisplayPort to VGA Adapter Converter Cable - DP to VGA 1920x1200 - Black - DisplayPort/VGA for Project"}
@@ -272,7 +272,7 @@
 {"Brand": "AddOn", "Product ID": "42394514#TigerDirect", "Product Name": "AddOn - SFP (mini-GBIC) transceiver module - 1000Base-TX - RJ-45"}
 {"Brand": "Middle Atlantic", "Product ID": "11415424", "Product Name": "Middle Atlantic WRK Series 2 W Vertical Lacer Strip"}
 {"Brand": "Katun", "Product ID": "41447004", "Product Name": "Katun [108r00726] Xerox Compatible Phaser 8560 Solid Ink Sticks - Black - Solid Ink - 3400 Page - 3 / Pack (37994)"}
-{"Brand": "Walmart", "Product ID": "11089731#Walmart.com", "Product Name": "Stress testing Item 186 DO NOT BUY"}
+{"Brand": "", "Product ID": "11089731#Walmart.com", "Product Name": "Stress testing Item 186 DO NOT BUY"}
 {"Brand": "Corsair", "Product ID": "42508283#TigerDirect", "Product Name": "Corsair Obsidian 250D Computer Case - Mini ITX 1x (Refurbished)"}
 {"Brand": "Lexmark", "Product ID": "41181888#TEKENVY", "Product Name": "Lexmark Black Toner Cartridge - Black - Laser - 5000 Page - 1 Each"}
 {"Brand": "TITAN PRO ", "Product ID": "40786694#Zoro", "Product Name": "TITAN PRO TRCFD205 Motor Run Capacitor 20/5 MFD 3-5/8 In. H"}
@@ -283,10 +283,10 @@
 {"Brand": "HP", "Product ID": "42952488", "Product Name": "HP CE262A (HP 648A) Compatible Yellow Toner Cartridges (Pack of 2)"}
 {"Brand": "Lenovo", "Product ID": "42523729", "Product Name": "Off Lease REFURBISHED IBM Lenovo M58 3.0GHz C2D 2GB 160GB DVD Windows 7 Pro Tower Computer + 19 LCD"}
 {"Brand": "Kwik Tek", "Product ID": "2553354", "Product Name": "Kwik Tek DP-56 Dry Pak Gps - Pda - Smart Phone Case"}
-{"Brand": "ACME", "Product ID": "42001953", "Product Name": "ACME ELECTRIC TB69301F3 TransformerIn 208/230/460, Out 115, 100VA"}
+{"Brand": "ACME ELECTRIC", "Product ID": "42001953", "Product Name": "ACME ELECTRIC TB69301F3 TransformerIn 208/230/460, Out 115, 100VA"}
 {"Brand": "Pelican", "Product ID": "40984460", "Product Name": "Pelican HardBack 1095 Carrying Case for 15 Notebook - Black - Crush Proof, Dust Proof"}
 {"Brand": "", "Product ID": "532132#Walmart.com", "Product Name": "The Kings Equal"}
-{"Brand": "Dell", "Product ID": "40870571", "Product Name": "Dell OptiPlex 3030 All-in-One Computer - Intel Core i5 i5-4590S 3 GHz - Desktop - 4 GB RAM - 1 TB HDD - DVD-Writer - Win"}
+{"Brand": "Dell OptiPlex", "Product ID": "40870571", "Product Name": "Dell OptiPlex 3030 All-in-One Computer - Intel Core i5 i5-4590S 3 GHz - Desktop - 4 GB RAM - 1 TB HDD - DVD-Writer - Win"}
 {"Brand": "Lenovo", "Product ID": "41031833#TEKENVY", "Product Name": "Lenovo ThinkPad Internal DVD-Writer - DVD-RAM/&#177;R/&#177;RW Support - 24x CD Read/24x CD Write/16x CD Rewrite - 8x DVD Read/8x"}
 {"Brand": "AmerTac", "Product ID": "41053972#TEKENVY", "Product Name": "AmerTac Light Controller"}
 {"Brand": "StarTech.com", "Product ID": "41031552", "Product Name": "StarTech.com 3 ft DisplayPort to Mini DisplayPort 1.2 Video Cable Adapter M/F - DisplayPort 4k - DisplayPort for Audio/V"}
@@ -339,7 +339,7 @@
 {"Brand": "HP", "Product ID": "22098067#UnbeatableSale.com", "Product Name": "HP CF210X HP-131X - High-Yield Toner 2400 Page-Yield Black"}
 {"Brand": "Califone", "Product ID": "42557683#TEKENVY", "Product Name": "Califone 30Pk CA2-30 CA-2 Headphone W/ 2001 Case Via Ergoguys - Stereo - Mini-phone - Wired - 32 Ohm - 20 Hz 20 kHz - Ov"}
 {"Brand": "", "Product ID": "33474356", "Product Name": "DECT 6.0 Cordless Phone System, 2 Handsets-CL81201"}
-{"Brand": "Bic", "Product ID": "15826759#Bic Warehouse", "Product Name": "Waste Toner Cartridge for Samsung CLP-315 CLX-3170 Series 2500 Page Yield"}
+{"Brand": "", "Product ID": "15826759#Bic Warehouse", "Product Name": "Waste Toner Cartridge for Samsung CLP-315 CLX-3170 Series 2500 Page Yield"}
 {"Brand": "Sony", "Product ID": "41468389#TigerDirect", "Product Name": "Sony Black Xperia  L 4.3 Android  Smartphone (Refurbished)"}
 {"Brand": "", "Product ID": "619941", "Product Name": "Dancing the Dream: The Seven Sacred Paths of Human Transformation"}
 {"Brand": "Gaiam", "Product ID": "32578647#Focus Camera", "Product Name": "Gaiam Multi-Tilt Canvas Folio Case for iPad Mini - Filigree (Green)"}
