@@ -13,6 +13,13 @@ common_suffix = ['inc', 'inc.', 'technology', 'technologies', 'tech', 'internati
 
 
 def read_dictionary():
+    """
+    Read the original dictionary given by professor.
+    Delete '\n' and space at the end.
+
+    :return: A dictionary in array.
+    """
+
     dictionary = []
     f = codecs.open(dictionary_file_name, 'r', errors='ignore')
     for line in f:
@@ -37,17 +44,31 @@ def read_dictionary():
     return dictionary
 
 
-# Convert dictionary to lower case().
 def convert_dictionary_to_lower(dictionary):
+    """
+    Convert all of the character in dictionary to lower case.
+
+    :param dictionary: The dictionary.
+    :return: Dictionary after convert.
+    """
+
     lower_dictionary = []
     for brand in dictionary:
         lower_dictionary.append(brand.lower())
     return lower_dictionary
 
 
-# Add 'rockland inc', 'rockland inc.', 'rockland technology', etc. for 'rockland'.
-# Add 'rockland' for 'rockland technology'.
 def increase_dictionary(dictionary):
+    """
+    Add some common suffix to all of the brand in dictionary.
+    e.g., Add 'rockland inc', 'rockland inc.', 'rockland technology', etc. for 'rockland'.
+    Add 'rockland' for 'rockland technology'.
+    And won't add common words as a brand.
+    e.g., do not add 'cable' for 'cable technology'.
+
+    :param dictionary: The dictionary in array.
+    :return: Dictionary after add words.
+    """
 
     i = 0
     while i < len(dictionary):

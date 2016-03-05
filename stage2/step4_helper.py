@@ -8,7 +8,14 @@ dictionary_out_name = 'step4_dictionary'
 common_suffix = ['inc', 'inc.', 'technology', 'technologies', 'tech', 'international',
                  'electronic', 'electronics', 'electric']
 
+
 def read_dictionary():
+    """
+    Read the dictionary generate by 'step4_dic_builder.py'
+
+    :return: A dictionary in array.
+    """
+
     dictionary = []
     f = codecs.open(dictionary_out_name, 'r', errors='ignore')
     for line in f:
@@ -25,6 +32,13 @@ def read_dictionary():
 
 
 def build_dictionary_set(dictionary):
+    """
+    Generate a set for dictionary, which is fast at searching.
+
+    :param dictionary: The dictionary in array.
+    :return: A dictionary of set.
+    """
+
     dictionary_set = set()
     for brand in dictionary:
         dictionary_set.add(brand)
@@ -32,6 +46,13 @@ def build_dictionary_set(dictionary):
 
 
 def read_data(file_name):
+    """
+    Read data in json format.
+
+    :param file_name: File name.
+    :return: A array contains data. Each item in array is a json.
+    """
+
     data = []
     f = codecs.open(file_name, 'r', errors='ignore')
     for line in f:
@@ -45,6 +66,21 @@ def read_data(file_name):
 
 
 def find_possible_brands(item_name, dictionary_set, dictionary):
+    """
+    Find the possible brands as array.
+    Rules are:
+    1.  Length of words should under 5.
+    2.  If the lower case of string is in dictionary, then add.
+    3.  If the lower case of string after delete non-characters is in dictionary,
+        then add. e.g., 'Tripp-Lite' -> 'TrippLite'.
+    4.  If the lower case of string after replace non-character with space is in dictionary,
+        then add. e.g., 'Tripp-Lite' -> 'Tripp Lite'.
+
+    :param item_name: The item name.
+    :param dictionary_set: The dictionary set.
+    :param dictionary: The dictionary array.
+    :return: possible_brands: All possible brands as array.
+    """
 
     possible_brands = []
 
@@ -80,9 +116,19 @@ def find_possible_brands(item_name, dictionary_set, dictionary):
 
 
 def reduce_possible_brands(item_name, possible_brands):
+    """
+    This fucntion does two things:
+    1.  Delete overlapping strings. Keep the longest one.
+        For example, if we found 'Tripp', 'Lite' and 'Tripp Lite' for for 'Tripp Lite Standard Power Cord ...'.
+        Remove 'Tripp' and 'Lite', Keep 'Tripp Lite'.
+    2.  Delete brand after 'for'.
+        For example, we should not consider 'Apple' as a brand name for item '... iphone case for Apple iphone 6s plus'.
+        Similarly, delete 'Dell' for '...battery for Dell laptop U14.5 ...'.
 
-    # If we found 'Tripp', 'Lite' and 'Tripp Lite' for for 'Tripp Lite Standard Power Cord ...'.
-    # Remove 'Tripp' and 'Lite', Keep 'Tripp Lite'.
+    :param item_name: The item name.
+    :param possible_brands: All possible brands as array.
+    :return: possible_brands: All possible brands after delete some of them.
+    """
 
     new_possible_brands = possible_brands[:]
     for name in possible_brands:
@@ -119,6 +165,18 @@ def reduce_possible_brands(item_name, possible_brands):
 
 
 def select_from_possible_brands(item_name, dictionary, possible_brands):
+    """
+    I use these rules(from 1 to 3) to choose a brand from all possible brand names.
+    1.  Among all brands, if one of them is at the beginning of the name, choose it.
+    2.  If none of them fits 1, then if one of them is the second word of name, choose it.
+    3.  If none of them fits 1 or 2, then sort them by the appear frequency(given in the original dictionary).
+        Choose the most frequent one.
+
+    :param item_name: The item name.
+    :param dictionary: The dictionary array.
+    :param possible_brands: All possible brands.
+    :return: one string which is the final result.
+    """
 
     # If any brand is at the beginning of the name, they choose it as brand.
     # Otherwise choose the most common brand
@@ -136,8 +194,23 @@ def select_from_possible_brands(item_name, dictionary, possible_brands):
     return possible_brands[0]
 
 
-# See if the first few words
 def find_brand_not_in_dictionary(item_name):
+    """
+    This function is used to see if the first few words might be a brand when we cannot find any possible
+    brands from the item name with respect to dictionary.
+    I use the following rules one by one to decide whether the first few words is brand:
+    1.  If within 5 words, a common company suffix appears, then take out this string.
+        e.g., 'ACME ELECTRIC TB69301F3 TransformerIn 208/230/460, Out 115, 100VA'.
+    2.  If within 5 words, there several words are all upper case and followed by a word with digit,
+        Then choose all of the upper words as brand.
+        e.g., 'DOLPHIN COMPONENTS CORP DC-8AHM Cable Tie8 InRedPK 1000'.
+    3.  If for the first one or two words, they are not common words(not in english dictionary)
+        and followed by a word with digit, then take the first one or two words as brand.
+        e.g., 'Speedaire 5YEC5 Stroke Adjuster, Retract'.
+
+    :param item_name: The item name.
+    :return: Either a string when we get a brand name, or '' if we still can't find any brands.
+    """
 
     item_name_split = item_name.split()
     common_dictionary = enchant.Dict("en_GB")
@@ -180,12 +253,25 @@ def find_brand_not_in_dictionary(item_name):
 
 
 def string_contains_digit(string):
+    """
+    Helper function to see if a string contains digits.
+    :param string: Input.
+    :return: True or False.
+    """
+
     for char in string:
         if char.isdigit():
             return True
     return False
 
+
 def string_all_upper(string):
+    """
+    Helper function to see if all of the characters in string is in upper case.
+    :param string: Input.
+    :return: True or False.
+    """
+
     for char in string:
         if not char.isupper():
             return False

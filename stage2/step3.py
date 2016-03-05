@@ -34,6 +34,7 @@ for line in f:
 
 print len(golden_data)
 
+# DO NOT change this seed.
 random.seed(893435071)
 random.shuffle(golden_data)
 
