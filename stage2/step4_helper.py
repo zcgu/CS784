@@ -140,7 +140,7 @@ def select_from_possible_brands(item_name, dictionary, possible_brands):
 def find_brand_not_in_dictionary(item_name):
 
     item_name_split = item_name.split()
-    common_dictionary = enchant.Dict("en_US")
+    common_dictionary = enchant.Dict("en_GB")
 
     # Looking for 'xxx Tech ...'.
     for string in item_name_split:

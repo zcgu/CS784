@@ -17,7 +17,7 @@ product_name = 'Product Name'
 product_brand = 'Brand'
 
 # Read data into memory.
-test_data = read_data(training_set_file_name)
+test_data = read_data(tuning_set_file_name)
 
 # Read dictionary.
 dictionary = read_dictionary()

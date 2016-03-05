@@ -5,7 +5,7 @@ import enchant
 dictionary_file_name = 'elec_brand_dic.txt'
 dictionary_out_name = 'step4_dictionary'
 
-common_dictionary = enchant.Dict("en_US")
+common_dictionary = enchant.Dict("en_GB")
 
 
 common_suffix = ['inc', 'inc.', 'technology', 'technologies', 'tech', 'international',
