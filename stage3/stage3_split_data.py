@@ -10,9 +10,11 @@ random.shuffle(lines)
 fw = open("X.txt", 'w')
 for i in range(0, len(lines) / 2):
     fw.write(lines[i])
+    fw.write('\n')
 fw.close()
 
 fw = open("Y.txt", 'w')
 for i in range(len(lines) / 2, len(lines)):
     fw.write(lines[i])
+    fw.write('\n')
 fw.close()

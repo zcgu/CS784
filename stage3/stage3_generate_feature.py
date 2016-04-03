@@ -1,5 +1,12 @@
 import stage3_helper
+from py_stringmatching import simfunctions, tokenizers
 
-lines = stage3_helper.read_file('X.txt')
+def generate_feature():
+    lines = stage3_helper.read_file('X.txt')
 
-print len(lines)
+    for line in lines:
+        stage3_helper.read_json_label_from_line(line)
+
+    print len(lines)
+
+generate_feature()
