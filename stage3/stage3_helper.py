@@ -28,4 +28,6 @@ def read_json_label_from_line(line):
     label = line_split[5]
 
     if label != 'MATCH' and label != 'MISMATCH':
-        print label
+        print 'Error read_json_label_from_line'
+
+    return json1, json2, label
