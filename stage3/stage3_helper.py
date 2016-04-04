@@ -44,18 +44,18 @@ def get_attribute_from_jsons(json1, json2, attribute):
 
 def get_01_from_label(label):
     if label == 'MATCH':
-        return 0
-    elif label == 'MISMATCH':
         return 1
+    elif label == 'MISMATCH':
+        return 0
     else:
         print 'Error get_01_from_label'
         return None
 
 
 def get_label_from_01(b):
-    if b == 0:
+    if b == 1:
         return 'MATCH'
-    elif b == 1:
+    elif b == 0:
         return 'MISMATCH'
     else:
         print 'Error get_01_from_label'
