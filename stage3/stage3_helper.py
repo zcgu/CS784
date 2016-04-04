@@ -1,14 +1,9 @@
 import codecs
 import json
 
+
 def read_file(file_name):
     f = codecs.open(file_name, 'r', errors='ignore')
-
-    # lines = []
-    #
-    # for line in f:
-    #     line = unicode(line, errors='ignore')
-    #     lines.append(line)
 
     raw_lines = f.read().splitlines()
     lines = []
