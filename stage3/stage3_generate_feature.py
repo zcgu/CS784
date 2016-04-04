@@ -7,8 +7,8 @@ product_name = 'Product Name'
 product_segment = 'Product Segment'
 
 
-def generate_feature():
-    lines = stage3_helper.read_file('X_training.txt')
+def generate_feature(file_name):
+    lines = stage3_helper.read_file(file_name)
 
     jsons_label_list = []
     for line in lines:
@@ -34,4 +34,4 @@ def generate_feature():
 
     return features, labels
 
-generate_feature()
+generate_feature('X_training.txt')

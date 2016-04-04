@@ -65,3 +65,24 @@ def get_label_from_01(b):
     else:
         print 'Error get_01_from_label'
         return None
+
+
+def accuracy(labels, predict_labels):
+    if len(labels) != len(predict_labels):
+        print 'Error accuracy()'
+        return None
+
+    total_positive = 0.
+    true_positive = 0.
+    false_positive = 0.
+    for i in range(0, len(labels)):
+        if labels[i] == 1:
+            total_positive += 1
+        if predict_labels[i] == 1 and predict_labels[i] == labels[i]:
+            true_positive += 1
+        if predict_labels[i] == 1 and predict_labels[i] != labels[i]:
+            false_positive += 1
+
+    precision = true_positive / (true_positive + false_positive)
+    recall = true_positive / total_positive
+    return precision, recall
