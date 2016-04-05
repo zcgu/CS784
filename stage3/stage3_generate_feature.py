@@ -30,7 +30,7 @@ def generate_feature(file_name):
         feature.append(simfunctions.overlap_coefficient(stage3_helper.stringToSet(string1), stage3_helper.stringToSet(string2)))
         feature.append(simfunctions.monge_elkan(stage3_helper.stringToSet(string1), stage3_helper.stringToSet(string2)))
         feature.append(simfunctions.tfidf(stage3_helper.stringToSet(string1), stage3_helper.stringToSet(string2)))
-      
+
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
