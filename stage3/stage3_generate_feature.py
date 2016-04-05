@@ -21,12 +21,27 @@ def generate_feature(file_name):
         # TODO: Add more features and optimize features.
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_type)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
+        feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
+        if(len(string1) == len(string2)):
+            feature.append(simfunctions.hamming_distance(string1, string2))
+        else:
+            feature.append(5)
 
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
+        feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
+        if(len(string1) == len(string2)):
+            feature.append(simfunctions.hamming_distance(string1, string2))
+        else:
+            feature.append(5)
 
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_segment)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
+        feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
+        if(len(string1) == len(string2)):
+            feature.append(simfunctions.hamming_distance(string1, string2))
+        else:
+            feature.append(5)
 
         features.append(feature)
         labels.append(stage3_helper.get_01_from_label(label))
