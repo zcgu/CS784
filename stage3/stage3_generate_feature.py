@@ -26,6 +26,8 @@ def generate_feature(file_name):
             feature.append(simfunctions.hamming_distance(string1, string2))
         else:
             feature.append(5)
+        feature.append(simfunctions.cosine(stage3_helper.stringToSet(string1),stage3_helper.stringToSet(string2)))
+
 
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
@@ -34,6 +36,7 @@ def generate_feature(file_name):
             feature.append(simfunctions.hamming_distance(string1, string2))
         else:
             feature.append(5)
+        feature.append(simfunctions.cosine(stage3_helper.stringToSet(string1), stage3_helper.stringToSet(string2)))
 
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_segment)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
@@ -42,6 +45,8 @@ def generate_feature(file_name):
             feature.append(simfunctions.hamming_distance(string1, string2))
         else:
             feature.append(5)
+        #feature.append(simfunctions.cosine(string1, string2))
+        feature.append(simfunctions.cosine(stage3_helper.stringToSet(string1), stage3_helper.stringToSet(string2)))
 
         features.append(feature)
         labels.append(stage3_helper.get_01_from_label(label))
