@@ -56,6 +56,11 @@ clf = svm.SVC()  # TODO: add parameters
 predict_labels_training, predict_labels_tuning = train_model(clf)
 print_result('SVM-SVC', predict_labels_training, predict_labels_tuning)
 
+# SVM-NuSVC
+clf = svm.NuSVC()  # TODO: add parameters
+predict_labels_training, predict_labels_tuning = train_model(clf)
+print_result('SVM-NuSVC', predict_labels_training, predict_labels_tuning)
+
 # Logistic Regression
 clf = linear_model.LogisticRegression()  # TODO: add parameters
 predict_labels_training, predict_labels_tuning = train_model(clf)
