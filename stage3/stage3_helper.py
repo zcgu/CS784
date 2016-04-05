@@ -83,9 +83,9 @@ def accuracy(labels, predict_labels):
     return precision, recall
 
 
-def stringToSet(str):
-    resultSet = set()
-    words = str.split()
+def string_to_set(string):
+    result_set = set()
+    words = string.split()
     for word in words:
-        resultSet.add(word)
-    return resultSet
+        result_set.add(word)
+    return result_set
