@@ -81,3 +81,11 @@ def accuracy(labels, predict_labels):
     precision = true_positive / (true_positive + false_positive)
     recall = true_positive / total_positive
     return precision, recall
+
+
+def stringToSet(str):
+    resultSet = set()
+    words = str.split()
+    for word in words:
+        resultSet.add(word)
+    return resultSet
