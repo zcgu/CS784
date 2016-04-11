@@ -13,18 +13,6 @@ for i in range(0, len(lines) / 2):
     fw.write('\n')
 fw.close()
 
-fw = open("X_training.txt", 'w')
-for i in range(0, len(lines) * 7 / 20):
-    fw.write(lines[i])
-    fw.write('\n')
-fw.close()
-
-fw = open("X_tuning.txt", 'w')
-for i in range(len(lines) * 7 / 20, len(lines) / 2):
-    fw.write(lines[i])
-    fw.write('\n')
-fw.close()
-
 fw = open("Y.txt", 'w')
 for i in range(len(lines) / 2, len(lines)):
     fw.write(lines[i])
