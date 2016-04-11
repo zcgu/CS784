@@ -46,40 +46,41 @@ def generate_feature(file_name):
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_type)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
-        if len(string1) == len(string2):
-            feature.append(simfunctions.hamming_distance(string1, string2))
-        else:
-            feature.append(5)
-        feature.append(simfunctions.cosine(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.overlap_coefficient(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.monge_elkan(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.tfidf(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+
+        feature.append(simfunctions.cosine(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+
 
         # product_name
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
-        if len(string1) == len(string2):
-            feature.append(simfunctions.hamming_distance(string1, string2))
-        else:
-            feature.append(5)
-        feature.append(simfunctions.cosine(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.overlap_coefficient(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+
+        feature.append(simfunctions.cosine(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
         feature.append(simfunctions.monge_elkan(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.tfidf(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+
+
+        # set1 = stage3_helper.string_to_set(string1)
+        # set2 = stage3_helper.string_to_set(string2)
+        #
+        # featureAdd = 0
+        # for e in set1:
+        #     if (e in set2) & (len(e) > 5) & (e.isdigit()):
+        #         featureAdd = 1
+        #         break;
+        #     else:
+        #         featureAdd = 0
+        # feature.append(featureAdd)
+
+
 
         # product_segment
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_segment)
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
-        feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
-        if len(string1) == len(string2):
-            feature.append(simfunctions.hamming_distance(string1, string2))
-        else:
-            feature.append(5)
-        feature.append(simfunctions.cosine(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.overlap_coefficient(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.monge_elkan(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.tfidf(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+        feature.append(simfunctions.cosine(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1),tokenizers.whitespace(string2)))
+
 
         # product_long_description
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_long_description)
