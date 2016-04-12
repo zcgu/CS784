@@ -55,6 +55,7 @@ def generate_feature(file_name):
         string2 = string2.lower()
         feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
+        feature.append(simfunctions.jaro(tokenizers.whitespace(string1)[0],tokenizers.whitespace(string2)[0]))
         # if len(string1) == len(string2):
         #     feature.append(simfunctions.hamming_distance(string1, string2))
         # else:
@@ -66,7 +67,8 @@ def generate_feature(file_name):
         feature.append(len(string1))
         feature.append(len(string2))
         feature.append(len(string1) - len(string2))
-
+        feature.append(len(tokenizers.whitespace(string1)))
+        feature.append(len(tokenizers.whitespace(string2)))
         # product_name
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
         string1 = string1.lower()
@@ -84,6 +86,9 @@ def generate_feature(file_name):
         feature.append(len(string1))
         feature.append(len(string2))
         feature.append(len(string1) - len(string2))
+        feature.append(simfunctions.jaro(tokenizers.whitespace(string1)[0], tokenizers.whitespace(string2)[0]))
+        feature.append(len(tokenizers.whitespace(string1)))
+        feature.append(len(tokenizers.whitespace(string2)))
 
         # product_segment
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_segment)
@@ -99,10 +104,13 @@ def generate_feature(file_name):
         feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
         feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
         feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.jaro(tokenizers.whitespace(string1)[0], tokenizers.whitespace(string2)[0]))
         feature.append(len(string1))
         feature.append(len(string2))
         feature.append(len(string1) - len(string2))
 
+        feature.append(len(tokenizers.whitespace(string1)))
+        feature.append(len(tokenizers.whitespace(string2)))
         # product_long_description
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_long_description)
 
@@ -158,6 +166,7 @@ def generate_feature(file_name):
             feature.append(len(string1))
             feature.append(len(string2))
             feature.append(len(string1) - len(string2))
+            #feature.append(simfunctions.jaro(tokenizers.whitespace(string1)[0], tokenizers.whitespace(string2)[0]))
 
         # Contains similar model names.
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
