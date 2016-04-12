@@ -77,7 +77,8 @@ def stage3_output(data_lines_test, predict_labels_test):
         pair_id = data_lines_test[i].split('?')[0]
         match_mismatch = stage3_helper.get_label_from_01(predict_labels_test[i])
         fw.write(pair_id + ', ' + match_mismatch)
-        fw.write('\n')
+        if i != len(data_lines_test) - 1:
+            fw.write('\n')
     fw.close()
 
 
