@@ -112,3 +112,12 @@ cachedStopWords = read_file("stopwords.txt")
 
 def clean_stop_word(string):
     return ' '.join([word for word in string.split() if word not in cachedStopWords])
+
+
+def output_threshold_for_low_prob(predict_labels, predict_prob, threshold):
+    for i in range(0, len(predict_labels)):
+        if predict_prob[i][0] > threshold:
+            predict_labels[i] = 0
+        else:
+            predict_labels[i] = 1
+    return predict_labels
