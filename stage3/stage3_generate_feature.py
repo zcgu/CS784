@@ -141,7 +141,7 @@ def generate_feature(file_name):
             string2 = get_predict_brand(string2_name)
 
         if string1 is None or string2 is None:
-            feature.append(0.5)
+            feature.append(0)
             feature.append(0)
             feature.append(0)
             feature.append(0)
