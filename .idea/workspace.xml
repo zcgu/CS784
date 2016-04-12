@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f22d508-2881-4abd-9ec8-fdb292917c8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stage3/Wrong_samples.txt" afterPath="$PROJECT_DIR$/stage3/Wrong_samples.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stage3/stage3_generate_feature.py" afterPath="$PROJECT_DIR$/stage3/stage3_generate_feature.py" />
     </list>
     <ignored path="CS784Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -721,7 +719,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460430608267</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="more features">
+      <created>1460432619278</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1460432619278</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -735,7 +739,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1867" height="1057" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21369863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
