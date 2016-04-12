@@ -35,6 +35,13 @@ def generate_feature(file_name):
     features = []
     labels = []
 
+    all_names = []
+    for line in lines:
+        json1, json2, label = stage3_helper.read_jsons_label_from_line(line)
+        string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
+        all_names.append(tokenizers.whitespace(string1))
+        all_names.append(tokenizers.whitespace(string2))
+
     for line in lines:
         json1, json2, label = stage3_helper.read_jsons_label_from_line(line)
 
@@ -44,49 +51,80 @@ def generate_feature(file_name):
 
         # product_type
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_type)
-        feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
+        string1 = string1.lower()
+        string2 = string2.lower()
+        feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
-        if len(string1) == len(string2):
-            feature.append(simfunctions.hamming_distance(string1, string2))
-        else:
-            feature.append(5)
-        feature.append(simfunctions.cosine(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.overlap_coefficient(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.monge_elkan(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.tfidf(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+        # if len(string1) == len(string2):
+        #     feature.append(simfunctions.hamming_distance(string1, string2))
+        # else:
+        #     feature.append(5)
+        feature.append(simfunctions.cosine(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(len(string1))
+        feature.append(len(string2))
+        feature.append(len(string1) - len(string2))
 
         # product_name
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
-        feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
+        string1 = string1.lower()
+        string2 = string2.lower()
+        feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
         if len(string1) == len(string2):
             feature.append(simfunctions.hamming_distance(string1, string2))
         else:
             feature.append(5)
-        feature.append(simfunctions.cosine(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.overlap_coefficient(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.monge_elkan(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.tfidf(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+        feature.append(simfunctions.cosine(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(len(string1))
+        feature.append(len(string2))
+        feature.append(len(string1) - len(string2))
 
         # product_segment
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_segment)
+        string1 = string1.lower()
+        string2 = string2.lower()
         feature.append(simfunctions.jaccard(tokenizers.qgram(string1, 3), tokenizers.qgram(string2, 3)))
         feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
-        if len(string1) == len(string2):
-            feature.append(simfunctions.hamming_distance(string1, string2))
-        else:
-            feature.append(5)
-        feature.append(simfunctions.cosine(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.overlap_coefficient(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.monge_elkan(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
-        feature.append(simfunctions.tfidf(stage3_helper.string_to_set(string1), stage3_helper.string_to_set(string2)))
+        # if len(string1) == len(string2):
+        #     feature.append(simfunctions.hamming_distance(string1, string2))
+        # else:
+        #     feature.append(5)
+        feature.append(simfunctions.cosine(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+        feature.append(len(string1))
+        feature.append(len(string2))
+        feature.append(len(string1) - len(string2))
 
         # product_long_description
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_long_description)
         if string1 is None or string2 is None:
-            feature.append(0.0)
+            feature.append(0.5)
+            feature.append(0)
+            feature.append(0)
+            feature.append(0)
+            # feature.append(0)
+            # feature.append(0)
+            # feature.append(0)
+            # feature.append(0)
         else:
+            string1 = string1.lower()
+            string2 = string2.lower()
             feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            # feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
+            # feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            # feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            # feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            feature.append(len(string1))
+            feature.append(len(string2))
+            feature.append(len(string1) - len(string2))
 
         # product_brand
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_brand)
@@ -99,12 +137,51 @@ def generate_feature(file_name):
             string2 = get_predict_brand(string2_name)
 
         if string1 is None or string2 is None:
-            feature.append(0.0)
+            feature.append(0.5)
+            feature.append(0)
+            feature.append(0)
+            feature.append(0)
+            feature.append(0)
+            feature.append(0)
+            feature.append(0)
+            feature.append(0)
         else:
             feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
+            feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            feature.append(len(string1))
+            feature.append(len(string2))
+            feature.append(len(string1) - len(string2))
+
+        # Contains similar model names.
+        string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_name)
+        string1 = string1.lower()
+        string2 = string2.lower()
+        model_strs1 = stage3_helper.find_model_str(string1)
+        model_strs2 = stage3_helper.find_model_str(string2)
+        # share_model_str = False
+        # for model in model_strs1:
+        #     if model.lower() in string2.lower():
+        #         share_model_str = True
+        # for model in model_strs2:
+        #     if model.lower() in string1.lower():
+        #         share_model_str = True
+        # if share_model_str:
+        #     feature.append(1)
+        # else:
+        #     feature.append(0)
+        if len(model_strs1) > 0 and len(model_strs2) > 0:
+            feature.append(simfunctions.jaccard(model_strs1, model_strs2))
+        else:
+            feature.append(0.5)
+        feature.append(len(model_strs1))
+        feature.append(len(model_strs2))
+        feature.append(len(model_strs1) - len(string2))
 
         # Add one feature and label
         features.append(feature)
         labels.append(stage3_helper.get_01_from_label(label))
 
-    return features, labels
+    return features, labels, lines

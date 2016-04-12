@@ -1,5 +1,6 @@
 import codecs
 import json
+from py_stringmatching import simfunctions, tokenizers
 
 
 def read_file(file_name):
@@ -83,9 +84,15 @@ def accuracy(labels, predict_labels):
     return precision, recall
 
 
-def string_to_set(string):
-    result_set = set()
-    words = string.split()
-    for word in words:
-        result_set.add(word)
-    return result_set
+def find_model_str(name, min_len=5):
+    model_strs = []
+    for string in tokenizers.whitespace(name):
+        if len(string) < min_len:
+            continue
+        contains_symbol = False
+        for char in string:
+            if not char.isalpha():
+                contains_symbol = True
+        if contains_symbol:
+            model_strs.append(string)
+    return model_strs
