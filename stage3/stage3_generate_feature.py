@@ -129,6 +129,8 @@ def generate_feature(file_name):
             string2 = string2.lower()
             string1 = stage3_helper.cleanhtml(string1)
             string2 = stage3_helper.cleanhtml(string2)
+            string1 = stage3_helper.clean_stop_word(string1)
+            string2 = stage3_helper.clean_stop_word(string2)
             feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
             # feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
             feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))

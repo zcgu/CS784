@@ -4,6 +4,7 @@ from py_stringmatching import simfunctions, tokenizers
 import re
 
 
+
 def read_file(file_name):
     f = codecs.open(file_name, 'r', errors='ignore')
 
@@ -104,3 +105,10 @@ TAG_RE = re.compile(r'<[^>]+>')
 
 def cleanhtml(text):
     return TAG_RE.sub('', text)
+
+
+cachedStopWords = read_file("stopwords.txt")
+
+
+def clean_stop_word(string):
+    return ' '.join([word for word in string.split() if word not in cachedStopWords])

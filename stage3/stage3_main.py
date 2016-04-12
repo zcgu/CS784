@@ -9,7 +9,7 @@ from sklearn import linear_model
 from sklearn.cross_validation import StratifiedKFold
 
 
-features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('X.txt')
+features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('Y.txt')
 
 skf = StratifiedKFold(labels_X, 5)
 
