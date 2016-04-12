@@ -1,7 +1,7 @@
 import stage3_helper
 from stage2 import step4_helper
 from py_stringmatching import simfunctions, tokenizers
-
+import json
 
 product_type = 'Product Type'
 product_name = 'Product Name'
@@ -105,8 +105,10 @@ def generate_feature(file_name):
 
         # product_long_description
         string1, string2 = stage3_helper.get_attribute_from_jsons(json1, json2, product_long_description)
+
         if string1 is None or string2 is None:
             feature.append(0.5)
+            feature.append(0)
             feature.append(0)
             feature.append(0)
             feature.append(0)
@@ -117,9 +119,11 @@ def generate_feature(file_name):
         else:
             string1 = string1.lower()
             string2 = string2.lower()
+            string1 = stage3_helper.cleanhtml(string1)
+            string2 = stage3_helper.cleanhtml(string2)
             feature.append(simfunctions.jaccard(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
             # feature.append(simfunctions.jaro_winkler(string1, string2, prefix_weight=0.1))
-            # feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
+            feature.append(simfunctions.overlap_coefficient(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
             # feature.append(simfunctions.monge_elkan(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
             # feature.append(simfunctions.tfidf(tokenizers.whitespace(string1), tokenizers.whitespace(string2)))
             feature.append(len(string1))
@@ -180,7 +184,26 @@ def generate_feature(file_name):
         feature.append(len(model_strs2))
         feature.append(len(model_strs1) - len(string2))
 
-        # Add one feature and label
+        # Other features.
+        common = 0
+        common_score = 0.0
+        for item in json1:
+            if item in json2:
+                common += 1
+                common_score += simfunctions.jaccard(tokenizers.whitespace(json1[item][0]), tokenizers.whitespace(json2[item][0]))
+        common_score = common_score / common
+        feature.append(len(json1))
+        feature.append(len(json2))
+        feature.append(len(json1) - len(json2))
+        feature.append(common)
+        feature.append(common_score)
+        feature.append(len(json.dumps(json1)))
+        feature.append(len(json.dumps(json2)))
+        feature.append(len(json.dumps(json1)) - len(json.dumps(json2)))
+        feature.append(simfunctions.jaccard(tokenizers.whitespace(json.dumps(json1)), tokenizers.whitespace(json.dumps(json2))))
+
+
+        # Add one feature and label.
         features.append(feature)
         labels.append(stage3_helper.get_01_from_label(label))
 
