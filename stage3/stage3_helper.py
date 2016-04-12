@@ -1,6 +1,8 @@
 import codecs
 import json
 from py_stringmatching import simfunctions, tokenizers
+import re
+
 
 
 def read_file(file_name):
@@ -96,3 +98,17 @@ def find_model_str(name, min_len=5):
         if contains_symbol:
             model_strs.append(string)
     return model_strs
+
+
+TAG_RE = re.compile(r'<[^>]+>')
+
+
+def cleanhtml(text):
+    return TAG_RE.sub('', text)
+
+
+cachedStopWords = read_file("stopwords.txt")
+
+
+def clean_stop_word(string):
+    return ' '.join([word for word in string.split() if word not in cachedStopWords])
