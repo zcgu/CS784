@@ -10,7 +10,7 @@ from sklearn.cross_validation import StratifiedKFold
 import numpy
 
 
-features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('X.txt')
+features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('../stage1/elec_pairs_stage1.txt')
 
 skf = StratifiedKFold(labels_X, 5)
 
