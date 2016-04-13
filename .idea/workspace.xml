@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f22d508-2881-4abd-9ec8-fdb292917c8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stage3/Wrong_samples.txt" afterPath="$PROJECT_DIR$/stage3/Wrong_samples.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stage3/stage3_main.py" afterPath="$PROJECT_DIR$/stage3/stage3_main.py" />
     </list>
     <ignored path="CS784Project.iws" />
@@ -28,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/stage3/stage3_generate_feature.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -60,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/stage3/stage3_split_data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -70,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/stage3/stage3_helper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="32" />
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -113,8 +114,8 @@
       <file leaf-file-name="stage3_main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stage3/stage3_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5726872">
-              <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+            <state vertical-scroll-proportion="-1.7973568">
+              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -126,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/stage3/stage3_output.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -194,6 +195,7 @@
         <option value="$PROJECT_DIR$/stage3/stage3_split_data.py" />
         <option value="$PROJECT_DIR$/stage3/stage3_hand_code_rule.py" />
         <option value="$PROJECT_DIR$/stage3/stage3_generate_feature.py" />
+        <option value="$PROJECT_DIR$/stage3/stage3_output.txt" />
         <option value="$PROJECT_DIR$/stage3/stage3_helper.py" />
         <option value="$PROJECT_DIR$/stage3/stage3_main.py" />
       </list>
@@ -745,7 +747,25 @@
       <option name="project" value="LOCAL" />
       <updated>1460503935645</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="finish">
+      <created>1460504019283</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1460504019283</updated>
+    </task>
+    <task id="LOCAL-00035" summary="finish">
+      <created>1460510448690</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1460510448690</updated>
+    </task>
+    <task id="LOCAL-00036" summary="finish">
+      <created>1460510943984</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1460510943984</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -759,9 +779,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1867" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21808219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21808219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1086,6 +1106,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,46 +1198,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stage3/stage3_split_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stage3/stage3_generate_feature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stage3/stage3_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="32" />
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stage3/stage3_generate_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stage3/stage3_split_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stage3/stage3_output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stage3/stage3_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5726872">
-          <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+        <state vertical-scroll-proportion="-1.7973568">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
