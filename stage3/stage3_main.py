@@ -63,12 +63,13 @@ def print_result(model_name, labels, predict_labels):
 
 
 def stage3_predict():
-    features_test, labels_test, data_lines_stage3 = stage3_generate_feature.generate_feature('Y.txt')
+    features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('elec_pairs_stage3_test1.txt')
+    # features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('Y.txt')
     clf = ensemble.RandomForestClassifier(n_estimators=1000)
     clf = clf.fit(features_X, labels_X)
     predict_labels_stage3 = clf.predict(features_test)
     predict_prob_stage3 = clf.predict_proba(features_test)
-    return labels_test, predict_labels_stage3, predict_prob_stage3, data_lines_stage3
+    return labels_test, predict_labels_stage3, predict_prob_stage3, data_lines_3
 
 
 def stage3_output(data_lines_test, predict_labels_test):
@@ -129,4 +130,4 @@ def stage3_output(data_lines_test, predict_labels_test):
 labels, predict_labels, predict_prob, data_lines_stage3 = stage3_predict()
 predict_labels = stage3_helper.output_threshold_for_low_prob(predict_labels, predict_prob, 0.41)
 stage3_output(data_lines_stage3, predict_labels)
-print_result('Random Forest', labels, predict_labels)
+# print_result('Random Forest', labels, predict_labels)

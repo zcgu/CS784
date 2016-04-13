@@ -23,10 +23,10 @@ def read_jsons_label_from_line(line):
     json1 = json.loads(line_split[2])   # json for product 1
     json2 = json.loads(line_split[4])   # json for product 2
 
-    label = line_split[5]
-
-    if label != 'MATCH' and label != 'MISMATCH':
-        print 'Error read_json_label_from_line'
+    if len(line_split) < 6:
+        label = None
+    else:
+        label = line_split[5]
 
     return json1, json2, label
 
@@ -51,7 +51,6 @@ def get_01_from_label(label):
     elif label == 'MISMATCH':
         return 0
     else:
-        print 'Error get_01_from_label'
         return None
 
 
