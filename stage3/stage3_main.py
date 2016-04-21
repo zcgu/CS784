@@ -10,7 +10,7 @@ from sklearn.cross_validation import StratifiedKFold
 import numpy
 
 
-features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('../stage1/elec_pairs_stage1.txt')
+features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('X.txt')
 
 skf = StratifiedKFold(labels_X, 5)
 
@@ -63,7 +63,7 @@ def print_result(model_name, labels, predict_labels):
 
 
 def stage3_predict():
-    features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('elec_pairs_stage3_test1_20K_anon.txt')
+    features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('Y.txt')
     # features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('Y.txt')
     clf = ensemble.RandomForestClassifier(n_estimators=1000)
     clf = clf.fit(features_X, labels_X)
