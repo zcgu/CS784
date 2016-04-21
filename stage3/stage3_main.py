@@ -10,7 +10,7 @@ from sklearn.cross_validation import StratifiedKFold
 import numpy
 
 
-features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('X.txt')
+features_X, labels_X, data_lines = stage3_generate_feature.generate_feature('../stage1/elec_pairs_stage1.txt')
 
 skf = StratifiedKFold(labels_X, 5)
 
@@ -63,7 +63,7 @@ def print_result(model_name, labels, predict_labels):
 
 
 def stage3_predict():
-    features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('elec_pairs_stage3_test1.txt')
+    features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('elec_pairs_stage3_test1_20K_anon.txt')
     # features_test, labels_test, data_lines_3 = stage3_generate_feature.generate_feature('Y.txt')
     clf = ensemble.RandomForestClassifier(n_estimators=1000)
     clf = clf.fit(features_X, labels_X)
@@ -119,15 +119,15 @@ def stage3_output(data_lines_test, predict_labels_test):
 
 
 
-labels, predict_labels, wrong_index, predict_prob = train_model(ensemble.RandomForestClassifier)
-for threshold in numpy.arange(0.4, 0.6, 0.01):
-    print 'Threshold:', threshold
-    predict_labels = stage3_helper.output_threshold_for_low_prob(predict_labels, predict_prob, threshold)
-    print_result('Random Forest', labels, predict_labels)
+# labels, predict_labels, wrong_index, predict_prob = train_model(ensemble.RandomForestClassifier)
+# for threshold in numpy.arange(0.4, 0.6, 0.01):
+#     print 'Threshold:', threshold
+#     predict_labels = stage3_helper.output_threshold_for_low_prob(predict_labels, predict_prob, threshold)
+#     print_result('Random Forest', labels, predict_labels)
+#
+# stage3_hand_code_rule.print_wrong_data('X.txt', wrong_index)
 
-stage3_hand_code_rule.print_wrong_data('X.txt', wrong_index)
-
-# labels, predict_labels, predict_prob, data_lines_stage3 = stage3_predict()
-# predict_labels = stage3_helper.output_threshold_for_low_prob(predict_labels, predict_prob, 0.41)
-# stage3_output(data_lines_stage3, predict_labels)
-# print_result('Random Forest', labels, predict_labels)
+labels, predict_labels, predict_prob, data_lines_stage3 = stage3_predict()
+predict_labels = stage3_helper.output_threshold_for_low_prob(predict_labels, predict_prob, 0.41)
+stage3_output(data_lines_stage3, predict_labels)
+print_result('Random Forest', labels, predict_labels)
