@@ -120,3 +120,13 @@ def output_threshold_for_low_prob(predict_labels, predict_prob, threshold):
         else:
             predict_labels[i] = 1
     return predict_labels
+
+
+
+def print_result(model_name, labels, predict_labels):
+    print model_name
+    print 'Result:' + 'precision, recall, F1'
+    precision, recall = accuracy(labels, predict_labels)
+    print precision, recall, 2*(precision * recall) / (precision + recall)
+    print ''
+
